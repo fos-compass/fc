@@ -25,10 +25,6 @@ class Author {
             $this->m_val += $questions[$i]->get_mutability($answers[$i]);
         }
 
-        echo $auth_name;
-        echo $this->s_val;
-        echo $this->m_val;
-
         $this->color = $color;
     }
 

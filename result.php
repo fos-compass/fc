@@ -13,7 +13,7 @@ $you = new Author("You", array("R"=>0,"G"=>0,"B"=>0), $survey,
 
 array_push($authors, $you);
 
-echo "<br/>" . $you->get_s_val() . "<br/>" . $you->get_m_val() . "<br/>";
+//echo "<br/>" . $you->get_s_val() . "<br/>" . $you->get_m_val() . "<br/>";
 
 /* Create the pData object */
 $myData = new pData();  
@@ -73,7 +73,7 @@ $myScatter = new pScatter($myPicture,$myData);
 $myScatter->drawScatterScale(["Mode"=>SCALE_MODE_MANUAL, "ManualScale"=>[0=>["Min"=>-20, "Max"=>20], 1=>["Min"=>-20, "Max"=>20]]]);
 
 /* Draw the legend */
-$myScatter->drawScatterLegend(280,380,array("Mode"=>LEGEND_HORIZONTAL,"Style"=>LEGEND_NOBORDER));
+$myScatter->drawScatterLegend(75,365,array("Mode"=>LEGEND_HORIZONTAL,"Style"=>LEGEND_NOBORDER));
 
 /* Draw a scatter plot chart */
 $myPicture->Antialias = TRUE;
