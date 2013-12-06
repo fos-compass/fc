@@ -5,6 +5,7 @@ require "class/pImage.class.php";
 require "class/pScatter.class.php";
 require "html.php";
 require "survey.php";
+require "author.php";
 head();
 
 $s = 0;
@@ -33,6 +34,29 @@ $myData->setSerieOnAxis("s",1);
 $myData->setAxisName(1,"Shareability");
 $myData->setAxisXY(1,AXIS_Y);
 $myData->setAxisPosition(1,AXIS_POSITION_LEFT);
+
+
+$authIndex = 0;
+/* plot the predefined authors */
+foreach($authors as $author) {
+    $m = $author->get_m_val();
+    $mSerieName = $author->get_auth_name() + "_m";
+
+    $s = $author->get_s_val();
+    $sSerieName = $author->get_auth_name() + "_s";
+
+    $myData->addPoints($m, $mSerieName);
+    $myData->setSerieOnAxis($mSerieName, 0);
+    
+    $myData->addPoints($s, $sSerieName);
+    $myData->setSerieOnAxis($sSerieName, 1);
+ 
+    ++$authIndex;
+
+    $myData->setScatterSerie($mSeriename, $sSerieName, $authIndex);
+    $myData->setScatterSerieDescription($authIndex, $author->get_auth_name());
+    $myData->setScatterSerieColor($authIndex, $author->get_color());
+}
 
 /* Create the 1st scatter chart binding */
 $myData->setScatterSerie("m","s",0);

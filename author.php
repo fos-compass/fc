@@ -25,22 +25,26 @@ class Author {
         $this->color = $color;
     }
 
+    public function get_auth_name() {
+        return $auth_name;
+    }
+
     public function get_s_val() {
         return $s_val;
     }
 
     public function get_m_val() {
-        return $m_val
+        return $m_val;
     }
 
     public function get_color() {
-        return $color
+        return $color;
     }
 }
 
 $authors = [
-    new Author("Lawrence Lessig", [174,174,233], $survey,
+    new Author("Lawrence Lessig", array("R"=>200,"G"=>200,"B"=>200), $survey,
           [1, 1, 0, -1, 2, 0, 1, 2, 2, 1, 1, 1, 1, 1, -1, -1, 1])
-    ]
+    ];
 ?>
 
