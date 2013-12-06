@@ -41,7 +41,7 @@ source code to the public.
 
   The GNU Affero General Public License is designed specifically to
 ensure that, in such cases, the modified source code becomes available
-to the community.  It requires the operator of a network server to
+to the community.  It require_onces the operator of a network server to
 provide the source code of the modified version running there to the
 users of that server.  Therefore, public use of a modified version, on
 a publicly accessible server, gives the public access to the source
@@ -128,7 +128,7 @@ programs which are used unmodified in performing those activities but
 which are not part of the work.  For example, Corresponding Source
 includes interface definition files associated with source files for
 the work, and the source code for shared libraries and dynamically
-linked subprograms that the work is specifically designed to require,
+linked subprograms that the work is specifically designed to require_once,
 such as by intimate data communication or control flow between those
 subprograms and other parts of the work.
 
@@ -204,7 +204,7 @@ terms of section 4, provided that you also meet all of these conditions:
 
     b) The work must carry prominent notices stating that it is
     released under this License and any conditions added under section
-    7.  This requirement modifies the requirement in section 4 to
+    7.  This require_oncement modifies the requirement in section 4 to
     "keep intact all notices".
 
     c) You must license the entire work, as a whole, under this
@@ -263,7 +263,7 @@ in one of these ways:
     d) Convey the object code by offering access from a designated
     place (gratis or for a charge), and offer equivalent access to the
     Corresponding Source in the same way through the same place at no
-    further charge.  You need not require recipients to copy the
+    further charge.  You need not require_once recipients to copy the
     Corresponding Source along with the object code.  If the place to
     copy the object code is a network server, the Corresponding Source
     may be on a different server (operated by you or a third party)
@@ -271,7 +271,7 @@ in one of these ways:
     clear directions next to the object code saying where to find the
     Corresponding Source.  Regardless of what server hosts the
     Corresponding Source, you remain obligated to ensure that it is
-    available for as long as needed to satisfy these requirements.
+    available for as long as needed to satisfy these require_oncements.
 
     e) Convey the object code using peer-to-peer transmission, provided
     you inform other peers where the object code and Corresponding
@@ -296,7 +296,7 @@ commercial, industrial or non-consumer uses, unless such uses represent
 the only significant mode of use of the product.
 
   "Installation Information" for a User Product means any methods,
-procedures, authorization keys, or other information required to install
+procedures, authorization keys, or other information require_onced to install
 and execute modified versions of a covered work in that User Product from
 a modified version of its Corresponding Source.  The information must
 suffice to ensure that the continued functioning of the modified object
@@ -309,13 +309,13 @@ part of a transaction in which the right of possession and use of the
 User Product is transferred to the recipient in perpetuity or for a
 fixed term (regardless of how the transaction is characterized), the
 Corresponding Source conveyed under this section must be accompanied
-by the Installation Information.  But this requirement does not apply
+by the Installation Information.  But this require_oncement does not apply
 if neither you nor any third party retains the ability to install
 modified object code on the User Product (for example, the work has
 been installed in ROM).
 
-  The requirement to provide Installation Information does not include a
-requirement to continue to provide support service, warranty, or updates
+  The require_oncement to provide Installation Information does not include a
+require_oncement to continue to provide support service, warranty, or updates
 for a work that has been modified or installed by the recipient, or for
 the User Product in which it has been modified or installed.  Access to a
 network may be denied when the modification itself materially and
@@ -325,7 +325,7 @@ protocols for communication across the network.
   Corresponding Source conveyed, and Installation Information provided,
 in accord with this section must be in a format that is publicly
 documented (and with an implementation available to the public in
-source code form), and must require no special password or key for
+source code form), and must require_once no special password or key for
 unpacking, reading or copying.
 
   7. Additional Terms.
@@ -341,7 +341,7 @@ this License without regard to the additional permissions.
 
   When you convey a copy of a covered work, you may at your option
 remove any additional permissions from that copy, or from any part of
-it.  (Additional permissions may be written to require their own
+it.  (Additional permissions may be written to require_once their own
 removal in certain cases when you modify the work.)  You may place
 additional permissions on material, added by you to a covered work,
 for which you have or can give appropriate copyright permission.
@@ -390,7 +390,7 @@ where to find the applicable terms.
 
   Additional terms, permissive or non-permissive, may be stated in the
 form of a separately written license, or stated as exceptions;
-the above requirements apply either way.
+the above require_oncements apply either way.
 
   8. Termination.
 
@@ -422,10 +422,10 @@ material under section 10.
 
   9. Acceptance Not Required for Having Copies.
 
-  You are not required to accept this License in order to receive or
+  You are not require_onced to accept this License in order to receive or
 run a copy of the Program.  Ancillary propagation of a covered work
 occurring solely as a consequence of using peer-to-peer transmission
-to receive a copy likewise does not require acceptance.  However,
+to receive a copy likewise does not require_once acceptance.  However,
 nothing other than this License grants you permission to propagate or
 modify any covered work.  These actions infringe copyright if you do
 not accept this License.  Therefore, by modifying or propagating a
@@ -469,7 +469,7 @@ by this License, of making, using, or selling its contributor version,
 but do not include claims that would be infringed only as a
 consequence of further modification of the contributor version.  For
 purposes of this definition, "control" includes the right to grant
-patent sublicenses in a manner consistent with the requirements of
+patent sublicenses in a manner consistent with the require_oncements of
 this License.
 
   Each contributor grants you a non-exclusive, worldwide, royalty-free
@@ -491,7 +491,7 @@ publicly available network server or other readily accessible means,
 then you must either (1) cause the Corresponding Source to be so
 available, or (2) arrange to deprive yourself of the benefit of the
 patent license for this particular work, or (3) arrange, in a manner
-consistent with the requirements of this License, to extend the patent
+consistent with the require_oncements of this License, to extend the patent
 license to downstream recipients.  "Knowingly relying" means you have
 actual knowledge that, but for the patent license, your conveying the
 covered work in a country, or your recipient's use of the covered work
@@ -653,7 +653,7 @@ get its source.  For example, if your program is a web application, its
 interface could display a "Source" link that leads users to an archive
 of the code.  There are many ways you could offer source, and different
 solutions will be better for different programs; see section 13 for the
-specific requirements.
+specific require_oncements.
 
   You should also get your employer (if you work as a programmer) or school,
 if any, to sign a "copyright disclaimer" for the program, if necessary.

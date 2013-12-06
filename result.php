@@ -1,11 +1,11 @@
 <?php
-require "class/pData.class.php";
-require "class/pDraw.class.php";
-require "class/pImage.class.php";
-require "class/pScatter.class.php";
-require "html.php";
-require "survey.php";
-require "author.php";
+require_once "class/pData.class.php";
+require_once "class/pDraw.class.php";
+require_once "class/pImage.class.php";
+require_once "class/pScatter.class.php";
+require_once "html.php";
+require_once "survey.php";
+require_once "author.php";
 head();
 
 $s = 0;
@@ -53,7 +53,7 @@ foreach($authors as $author) {
  
     ++$authIndex;
 
-    $myData->setScatterSerie($mSeriename, $sSerieName, $authIndex);
+    $myData->setScatterSerie($mSerieName, $sSerieName, $authIndex);
     $myData->setScatterSerieDescription($authIndex, $author->get_auth_name());
     $myData->setScatterSerieColor($authIndex, $author->get_color());
 }

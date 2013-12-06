@@ -1,6 +1,6 @@
 <?php
-require "html.php";
-require "survey.php";
+require_once "html.php";
+require_once "survey.php";
 head();
 
 echo "<form action=\"result.php\" action=\"get\">"; // TODO validate the results

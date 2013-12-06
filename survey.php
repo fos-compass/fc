@@ -1,4 +1,5 @@
 <?php
+
 class Question {
 	private static $instances = 0;
 	private $id;
