@@ -37,7 +37,7 @@ class Question {
 
 $survey = [ new Question("If I buy content (music, books, movies, software, 
                           etc.), I should be able to use it on all my devices.", 
-                         0, 1),
+                         1, 0),
 
 			new Question("If I buy content, I should be able to share it with 
                           my friends, as is.", 
@@ -50,12 +50,12 @@ $survey = [ new Question("If I buy content (music, books, movies, software,
 
 			new Question("If I use a work, I am responsible for licensing any 
                           involved intellectual property.", 
-                         1, 0),
+                         -1, 0),
 
 			new Question("If content I buy contains digital rights management, 
                           I would not feel guilty obtaining, at no extra cost,
                           an unencumbered version.", 
-                         -1, 0),
+                         1, 0),
 
 			new Question("Share-alike reduces user choice because the permission
                           to create a less free version is a form of freedom.", 
