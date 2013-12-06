@@ -1,4 +1,6 @@
 <?php
+require("survey.php");
+
 class Author {
     private $auth_name;
     
@@ -9,7 +11,7 @@ class Author {
 
     private $color;
 
-    public function __construct($auth_name, $questions, $answers, $color) {
+    public function __construct($auth_name, $color, $questions, $answers) {
         $this->auth_name = $name;
         $this->answers = $answers;
 
@@ -35,5 +37,10 @@ class Author {
         return $color
     }
 }
+
+$authors = [
+    new Author("Lawrence Lessig", [174,174,233], $survey,
+          [1, 1, 0, -1, 2, 0, 1, 2, 2, 1, 1, 1, 1, 1, -1, -1, 1])
+    ]
 ?>
 
