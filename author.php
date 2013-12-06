@@ -27,4 +27,5 @@ class Author {
         return $m_val
     }
 }
+?>
 
