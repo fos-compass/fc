@@ -95,5 +95,5 @@ $myScatter->drawScatterPlotChart();
 $myPicture->render("img/img.png");
 
 echo "<img src=\"img/img.png\"/>";
-tail();
+foot();
 ?>

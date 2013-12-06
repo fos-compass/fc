@@ -10,5 +10,5 @@ foreach($survey as &$question)
 echo "<tr><td class=\"centered\" colspan=\"2\"><input type=\"submit\"/></td></tr>";
 echo "</table>";
 
-tail();
+foot();
 ?>
