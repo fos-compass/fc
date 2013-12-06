@@ -1,3 +1,7 @@
-body {
-	background-color: magenta;
+td {
+	border-style: groove;
+}
+
+.centered {
+	text-align: center;
 }
