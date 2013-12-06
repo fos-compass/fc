@@ -8,42 +8,34 @@ require_once "survey.php";
 require_once "author.php";
 head();
 
-$s = 0;
-$m = 0;
+$you = new Author("You", array("R"=>0,"G"=>0,"B"=>0), $survey, 
+            array_values($_GET));
 
-foreach($_GET as $key => $value) {
-	$s += $survey[$key]->get_shareability($value);
-	$m += $survey[$key]->get_mutability($value);
-}
+array_push($authors, $you);
 
-echo $s . "<br/>" . $m . "<br/>";
+echo "<br/>" . $you->get_s_val() . "<br/>" . $you->get_m_val() . "<br/>";
 
 /* Create the pData object */
 $myData = new pData();  
 
 /* Create the X axis and the binded series */
-$myData->addPoints($m, "m");
-$myData->setSerieOnAxis("m",0);
 $myData->setAxisName(0,"Mutability");
 $myData->setAxisXY(0,AXIS_X);
 $myData->setAxisPosition(0,AXIS_POSITION_TOP);
 
 /* Create the Y axis and the binded series */
-$myData->addPoints($s, "s");
-$myData->setSerieOnAxis("s",1);
 $myData->setAxisName(1,"Shareability");
 $myData->setAxisXY(1,AXIS_Y);
 $myData->setAxisPosition(1,AXIS_POSITION_LEFT);
 
-
-$authIndex = 0;
+$authIndex = 1;
 /* plot the predefined authors */
 foreach($authors as $author) {
     $m = $author->get_m_val();
-    $mSerieName = $author->get_auth_name() + "_m";
+    $mSerieName = $author->get_auth_name() . "_m";
 
     $s = $author->get_s_val();
-    $sSerieName = $author->get_auth_name() + "_s";
+    $sSerieName = $author->get_auth_name() . "_s";
 
     $myData->addPoints($m, $mSerieName);
     $myData->setSerieOnAxis($mSerieName, 0);
@@ -51,17 +43,13 @@ foreach($authors as $author) {
     $myData->addPoints($s, $sSerieName);
     $myData->setSerieOnAxis($sSerieName, 1);
  
-    ++$authIndex;
 
     $myData->setScatterSerie($mSerieName, $sSerieName, $authIndex);
     $myData->setScatterSerieDescription($authIndex, $author->get_auth_name());
     $myData->setScatterSerieColor($authIndex, $author->get_color());
-}
 
-/* Create the 1st scatter chart binding */
-$myData->setScatterSerie("m","s",0);
-$myData->setScatterSerieDescription(0,"You");
-$myData->setScatterSerieColor(0,array("R"=>0,"G"=>0,"B"=>0));
+    ++$authIndex;
+}
 
 /* Create the pChart object */
 $myPicture = new pImage(400,400,$myData);
@@ -82,7 +70,7 @@ $myPicture->setGraphArea(40,40,370,370);
 $myScatter = new pScatter($myPicture,$myData);
 
 /* Draw the scale */
-$myScatter->drawScatterScale(["Mode"=>SCALE_MODE_MANUAL, "ManualScale"=>[0=>["Min"=>-10, "Max"=>10], 1=>["Min"=>-10, "Max"=>10]]]);
+$myScatter->drawScatterScale(["Mode"=>SCALE_MODE_MANUAL, "ManualScale"=>[0=>["Min"=>-20, "Max"=>20], 1=>["Min"=>-20, "Max"=>20]]]);
 
 /* Draw the legend */
 $myScatter->drawScatterLegend(280,380,array("Mode"=>LEGEND_HORIZONTAL,"Style"=>LEGEND_NOBORDER));

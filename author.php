@@ -1,7 +1,5 @@
 <?php
-echo "BLAH";
 require_once("survey.php");
-echo "BLAH";
 
 class Author {
     private $auth_name;
@@ -19,10 +17,17 @@ class Author {
 
         assert(count($questions) == count($answers));
 
+        $this->s_val = 0;
+        $this->m_val = 0;
+
         for($i = 0; $i < count($answers); $i++) {
             $this->s_val += $questions[$i]->get_shareability($answers[$i]);
             $this->m_val += $questions[$i]->get_mutability($answers[$i]);
         }
+
+        echo $auth_name;
+        echo $this->s_val;
+        echo $this->m_val;
 
         $this->color = $color;
     }
@@ -48,7 +53,11 @@ class Author {
 
 $authors = [
     new Author("Lawrence Lessig", array("R"=>200,"G"=>200,"B"=>200), $survey,
-          [1, 1, 0, -1, 2, 0, 1, 2, 2, 1, 1, 1, 1, 1, -1, -1, 1])
+          [1, 1, 0, -1, 2, 0, 1, 2, 2, 1, 1, 1, 1, 1, -1, -1, 1]),
+
+    new Author("Richard Stallman", array("R"=>255,"G"=>0,"B"=>0), $survey,
+          [2, 2, 2, -1, 2, -1, 2, 2, 2, 1, 2, -2, 2, -1, 1, 1, 2]) 
+          
     ];
 ?>
 
