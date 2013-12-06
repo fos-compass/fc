@@ -1,12 +1,11 @@
-<html>
-<head><title>FOSCompass</title></head>
-<body>
 <?php
 require "class/pData.class.php";
 require "class/pDraw.class.php";
 require "class/pImage.class.php";
 require "class/pScatter.class.php";
+require "html.php";
 require "survey.php";
+head();
 
 $s = 0;
 $m = 0;
@@ -70,7 +69,7 @@ $myScatter->drawScatterPlotChart();
 
 /* Render the picture (choose the best way) */
 $myPicture->render("img/img.png");
+
+echo "<img src=\"img/img.png\"/>";
+tail();
 ?>
-<img src="img/img.png"/>
-</body>
-</html>

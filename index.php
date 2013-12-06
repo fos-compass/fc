@@ -1,8 +1,8 @@
-<html>
-<head><title>FOSCompass</title></head>
-<body>
 <?php
+require "html.php";
 require "survey.php";
+head();
+
 echo "<form action=\"result.php\" action=\"get\">"; // TODO validate the results
 echo "<table>";
 foreach($survey as &$question)
@@ -10,6 +10,5 @@ foreach($survey as &$question)
 echo "<tr><td colspan=\"2\"><input type=\"submit\"/></td></tr>";
 echo "</table>";
 
+tail();
 ?>
-</body>
-</html>
