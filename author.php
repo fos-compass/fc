@@ -7,7 +7,9 @@ class Author {
 
     private $answers;
 
-    public function __construct($auth_name, $questions, $answers) {
+    private $color;
+
+    public function __construct($auth_name, $questions, $answers, $color) {
         $this->auth_name = $name;
         $this->answers = $answers;
 
@@ -17,6 +19,8 @@ class Author {
             $s_val += $questions[i].get_sharability($answers[i]);
             $m_val += $questions[i].get_mutability($answers[i]);
         }
+
+        $this->color = $color;
     }
 
     public function get_s_val() {
@@ -25,6 +29,10 @@ class Author {
 
     public function get_m_val() {
         return $m_val
+    }
+
+    public function get_color() {
+        return $color
     }
 }
 ?>
