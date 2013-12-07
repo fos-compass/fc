@@ -79,6 +79,8 @@ $myScatter->drawScatterLegend(75,365,array("Mode"=>LEGEND_HORIZONTAL,"Style"=>LE
 /* Draw a scatter plot chart */
 $myPicture->Antialias = TRUE;
 $myScatter->drawScatterPlotChart();
+$myPicture->drawLine(40, 205, 370, 205); // X axis
+$myPicture->drawLine(205, 40, 205, 370); // Y axis
 
 /* Render the picture (choose the best way) */
 $myPicture->render("img/img.png");
