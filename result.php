@@ -6,6 +6,7 @@ require_once "class/pScatter.class.php";
 require_once "html.php";
 require_once "survey.php";
 require_once "author.php";
+
 head();
 
 $you = new Author("You", array("R"=>0,"G"=>0,"B"=>0), $survey, 
