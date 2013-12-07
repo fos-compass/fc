@@ -19,15 +19,6 @@ array_push($authors, $you);
 /* Create the pData object */
 $myData = new pData();  
 
-/* Create the X axis and the binded series */
-$myData->setAxisName(0,"Mutability");
-$myData->setAxisXY(0,AXIS_X);
-$myData->setAxisPosition(0,AXIS_POSITION_TOP);
-
-/* Create the Y axis and the binded series */
-$myData->setAxisName(1,"Shareability");
-$myData->setAxisXY(1,AXIS_Y);
-$myData->setAxisPosition(1,AXIS_POSITION_LEFT);
 
 $authIndex = 1;
 /* plot the predefined authors */
@@ -51,6 +42,16 @@ foreach($authors as $author) {
 
     ++$authIndex;
 }
+
+/* Create the X axis and the binded series */
+$myData->setAxisName(0,"Mutability");
+$myData->setAxisXY(0,AXIS_X);
+$myData->setAxisPosition(0,AXIS_POSITION_TOP);
+
+/* Create the Y axis and the binded series */
+$myData->setAxisName(1,"Shareability");
+$myData->setAxisXY(1,AXIS_Y);
+$myData->setAxisPosition(1,AXIS_POSITION_LEFT);
 
 /* Create the pChart object */
 $myPicture = new pImage(400,400,$myData);
@@ -82,6 +83,10 @@ $myPicture->Antialias = TRUE;
 $myScatter->drawScatterPlotChart();
 $myPicture->drawLine(40, 205, 370, 205); // X axis
 $myPicture->drawLine(205, 40, 205, 370); // Y axis
+
+//$myPicture->drawLine(122, 40, 122, 370); // Y axis
+//$myPicture->drawLine(287, 40, 287, 370); // Y axis
+//$myPicture->drawLine(486, 40, 486, 370); // Y axis
 
 /* Render the picture (choose the best way) */
 $myPicture->render("img/img.png");
