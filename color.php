@@ -1,0 +1,19 @@
+<?php
+$colors = array( 
+    "black"   =>array( "R"=>0x00, "G"=>0x00, "B"=>0x00), 
+    "maroon"  =>array( "R"=>0x80, "G"=>0x00, "B"=>0x00), 
+    "green"   =>array( "R"=>0x00, "G"=>0x80, "B"=>0x00), 
+    "olive"   =>array( "R"=>0x80, "G"=>0x80, "B"=>0x00), 
+    "navy"    =>array( "R"=>0x00, "G"=>0x00, "B"=>0x80), 
+    "purple"  =>array( "R"=>0x80, "G"=>0x00, "B"=>0x80), 
+    "teal"    =>array( "R"=>0x00, "G"=>0x80, "B"=>0x80), 
+    "gray"    =>array( "R"=>0x80, "G"=>0x80, "B"=>0x80), 
+    "silver"  =>array( "R"=>0xC0, "G"=>0xC0, "B"=>0xC0), 
+    "red"     =>array( "R"=>0xFF, "G"=>0x00, "B"=>0x00), 
+    "lime"    =>array( "R"=>0x00, "G"=>0xFF, "B"=>0x00), 
+    "yellow"  =>array( "R"=>0xFF, "G"=>0xFF, "B"=>0x00), 
+    "blue"    =>array( "R"=>0x00, "G"=>0x00, "B"=>0xFF), 
+    "fuchsia" =>array( "R"=>0xFF, "G"=>0x00, "B"=>0xFF), 
+    "aqua"    =>array( "R"=>0x00, "G"=>0xFF, "B"=>0xFF), 
+    "white"   =>array( "R"=>0xFF, "G"=>0xFF, "B"=>0xFF) );
+?>
