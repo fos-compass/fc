@@ -1,4 +1,5 @@
 <?php
+require_once("color.php");
 require_once("survey.php");
 
 class Author {
@@ -45,14 +46,24 @@ class Author {
     }
 }
 
-//var_dump($survey);
-
 $authors = [
-    new Author("Lawrence Lessig", array("R"=>200,"G"=>200,"B"=>200), $survey,
-          [1, 1, 0, -1, 2, 0, 1, 2, 2, 1, 1, 1, 1, 1, -1, -1, 1]),
+    new Author("Lawrence Lessig", $colors["aqua"], $survey,
+          [1, 1, 1, -1, 1, -1, 1, 2, 1, 2, 1, 1, 1, 1, -1, -1, 1]),
 
-    new Author("Richard Stallman", array("R"=>255,"G"=>0,"B"=>0), $survey,
-          [2, 2, 2, -1, 2, -1, 2, 2, 2, 1, 2, -2, 2, -1, 1, 1, 2]) 
+    new Author("Eric Raymond", $colors["navy"], $survey,
+          [2, 1, 2, -1, 1, -1, 1, 2, 2, 2, 2, -1, 1, 1, 1, -1, 2]),
+
+    new Author("Mark Shuttelworth", $colors["purple"], $survey,
+          [1, 1, 1, -1, 1, -1, 1, 1, 2, 2, 1, 1, 1, 1, 1, -1, 2]),
+
+    new Author("Richard Stallman", $colors["red"], $survey,
+          [2, 2, 2, -1, 2, -1, 2, 2, 2, 1, 2, -2, 2, -1, 1, 1, 2]),
+
+    new Author("Linus Torvalds", $colors["blue"], $survey,
+          [1, 1, 1, -1, 1, 1, 1, 2, 2, 2, 1, 1, -1, 1, 1, -1, 1]),
+
+    new Author("Bill Gates", $colors["lime"], $survey,
+          [-1, -2, 1, 2, -2, 1, -2, -1, -1, -1, -2, 2, -1, -1, 1, 1, -1]),
           
     ];
 ?>
