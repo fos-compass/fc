@@ -14,16 +14,28 @@ class Question {
 		$this->mutable_multable = $mutable_multable;
 	}
 
+	protected function stringify($chosen) {
+		static $options = [-2=> "Strongly disagree", -1=> "Disagree", 1=> "Agree", 2=> "Strongly agree"];
+
+		$visibility = "";
+		if($chosen)
+			$visibility = " disabled=\"true\"";
+
+		$result = "<tr>
+						<td>{$this->text}</td>
+						<td>";
+
+		foreach($options as $val => $desc)
+			$result .= "<input type=\"radio\" name=\"{$this->id}\" value=\"{$val}\"" . ($val == $chosen ? " checked=\"true\"" : "") . "{$visibility}/>{$desc}<br/>";
+
+		$result .= "	</td>
+					</tr>";
+
+		return $result;
+	}
+
 	public function __toString() {
-		return "<tr>
-					<td>{$this->text}</td>
-					<td>
-						<input type=\"radio\" name=\"{$this->id}\" value=\"-2\"/>Strongly disagree<br/>
-						<input type=\"radio\" name=\"{$this->id}\" value=\"-1\"/>Disagree<br/>
-						<input type=\"radio\" name=\"{$this->id}\" value=\"1\"/>Agree<br/>
-						<input type=\"radio\" name=\"{$this->id}\" value=\"2\"/>Strongly agree
-					</td>
-				</tr>";
+		return $this->stringify(0);
 	}
 
 	public function get_shareability($response) {
