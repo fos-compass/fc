@@ -74,7 +74,8 @@ $myScatter = new pScatter($myPicture,$myData);
 $myScatter->drawScatterScale(["Mode"=>SCALE_MODE_MANUAL, "ManualScale"=>[0=>["Min"=>-20, "Max"=>20], 1=>["Min"=>-20, "Max"=>20]]]);
 
 /* Draw the legend */
-$myScatter->drawScatterLegend(75,365,array("Mode"=>LEGEND_HORIZONTAL,"Style"=>LEGEND_NOBORDER));
+$myScatter->drawScatterLegend(280,300,array("Mode"=>LEGEND_VERTICAL,"Style"=>LEGEND_NOBORDER,
+"FontSize"=>16));
 
 /* Draw a scatter plot chart */
 $myPicture->Antialias = TRUE;
