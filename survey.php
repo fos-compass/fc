@@ -42,7 +42,7 @@ class Question {
 			$result .= "<td>";
 			if(strlen($citation)) {
 				$sourcenum = strtok($citation, " ");
-				$result .= "<a href=\"readlist.php#{$sourcenum}\">{$sourcenum}</a>&nbsp;" . strtok("");
+				$result .= "<a href=\"readlist.php?anchor={$sourcenum}#{$sourcenum}\">{$sourcenum}</a>&nbsp;" . strtok("");
 			}
 			else
 				$result .= "&nbsp;";

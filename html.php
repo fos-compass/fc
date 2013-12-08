@@ -1,14 +1,17 @@
 <?php
 require_once "author.php";
 
-function head() {
+function head($nonsense) {
 	global $authors;
+	echo $nonsense;
+	assert($nonsense != "");
 
 	echo "<html>
 	<head>
 		<title>FOSS Compass</title>
-		<link rel=\"stylesheet\" href=\"style.css\"/>
-	</head>
+		<link rel=\"stylesheet\" href=\"style.css\"/>" .
+	$nonsense .
+	"</head>
 	<body>";
 
 	echo "<div id=\"div-main\">
