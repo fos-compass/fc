@@ -17,7 +17,7 @@ if(array_key_exists("author", $_GET)) {
 }
 
 echo "<form action=\"result.php\" action=\"get\">"; // TODO validate the results
-echo "<table>";
+echo "<table width=\"100%\">";
 foreach($tobedisplayed as &$question)
 	echo $question;
 if(!array_key_exists("author", $_GET))

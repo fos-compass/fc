@@ -58,15 +58,15 @@
 
 <h3>Bill Gates</h3>
 <ul class="cite">
-	<li>F0&nbsp;<a id=F0" target="_blank" href="https://en.wikipedia.org/wiki/Open_Letter_to_Hobbyists">Open Letter to Hobbyists</a></li>
-	<li>F1&nbsp;<a id=F1" target="_blank" href="http://articles.latimes.com/2006/apr/09/business/fi-micropiracy9">How Piracy Opens Doors for Windows</a></li>
-	<li>F2&nbsp;<a id=F2" target="_blank" href="http://news.cnet.com/Gates-taking-a-seat-in-your-den---page-4/2008-1041_3-5514121-4.html">Newsmaker: Gates Taking a Seat in Your Den</a></li>
-	<li>F3&nbsp;<a id=F3" target="_blank" href="http://usatoday30.usatoday.com/tech/techinvestor/corporatenews/2007-10-03-bill-gates_N.htm">Q&A with Bill Gates: Microsoft's pushing its frontiers</a></li>
-	<li>F4&nbsp;<a id=F4" target="_blank" href="http://gizmodo.com/029706/gates-interview-part-four-communists-and-drm">Gates Interview Part Four: Communists and DRM</a></li>
-	<li>F5&nbsp;<a id=F5" target="_blank" href="https://en.wikipedia.org/wiki/Internet_explorer">Internet Explorer</a></li>
-	<li>F6&nbsp;<a id=F6" target="_blank" href="https://en.wikipedia.org/wiki/Genuine_Advantage">Windows Genuine Advantage</a></li>
-	<li>F7&nbsp;<a id=F7" target="_blank" href="http://slashdot.org/story/01/06/01/1658258/ballmer-calls-linux-a-cancer">Ballmer Calls Linux "A Cancer"</a></li>
-	<li>F8&nbsp;<a id=F8" target="_blank" href="http://www.wired.com/wiredenterprise/2012/01/meet-bill-gates/">Meet Bill Gates, the Man Who Changed Open Source Software</a></li>
+	<li>F0&nbsp;<a id="F0" target="_blank" href="https://en.wikipedia.org/wiki/Open_Letter_to_Hobbyists">Open Letter to Hobbyists</a></li>
+	<li>F1&nbsp;<a id="F1" target="_blank" href="http://articles.latimes.com/2006/apr/09/business/fi-micropiracy9">How Piracy Opens Doors for Windows</a></li>
+	<li>F2&nbsp;<a id="F2" target="_blank" href="http://news.cnet.com/Gates-taking-a-seat-in-your-den---page-4/2008-1041_3-5514121-4.html">Newsmaker: Gates Taking a Seat in Your Den</a></li>
+	<li>F3&nbsp;<a id="F3" target="_blank" href="http://usatoday30.usatoday.com/tech/techinvestor/corporatenews/2007-10-03-bill-gates_N.htm">Q&A with Bill Gates: Microsoft's pushing its frontiers</a></li>
+	<li>F4&nbsp;<a id="F4" target="_blank" href="http://gizmodo.com/029706/gates-interview-part-four-communists-and-drm">Gates Interview Part Four: Communists and DRM</a></li>
+	<li>F5&nbsp;<a id="F5" target="_blank" href="https://en.wikipedia.org/wiki/Internet_explorer">Internet Explorer</a></li>
+	<li>F6&nbsp;<a id="F6" target="_blank" href="https://en.wikipedia.org/wiki/Genuine_Advantage">Windows Genuine Advantage</a></li>
+	<li>F7&nbsp;<a id="F7" target="_blank" href="http://slashdot.org/story/01/06/01/1658258/ballmer-calls-linux-a-cancer">Ballmer Calls Linux "A Cancer"</a></li>
+	<li>F8&nbsp;<a id="F8" target="_blank" href="http://www.wired.com/wiredenterprise/2012/01/meet-bill-gates/">Meet Bill Gates, the Man Who Changed Open Source Software</a></li>
 </ul>
 
 <?php foot(); ?>
