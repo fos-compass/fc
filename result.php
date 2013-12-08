@@ -4,8 +4,6 @@ require_once "class/pDraw.class.php";
 require_once "class/pImage.class.php";
 require_once "class/pScatter.class.php";
 require_once "html.php";
-require_once "survey.php";
-require_once "author.php";
 
 head();
 
