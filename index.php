@@ -36,7 +36,7 @@ learning the specific methodology behind the quiz questions. <b>At no time is
 your data logged. The data is used to calculate your result which will remain
 private for your use</b>.</p>
 
-<p><a href="index.php">Are you ready to take the quiz?</a></p>
+<p><a href="quiz.php">Are you ready to take the quiz?</a></p>
 
 <p>Once you're done, you can check out how notable people in the software and
 content industry might answer the same questions. These results were determined
