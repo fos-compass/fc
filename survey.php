@@ -7,11 +7,19 @@ class Question {
 	private $shareable_multable; // multiple plier
 	private $mutable_multable; // multiple plier
 
-	public function __construct($text, $shareable_multable, $mutable_multable) {
-		$this->id = Question::$instances++;
-		$this->text = $text;
-		$this->shareable_multable = $shareable_multable;
-		$this->mutable_multable = $mutable_multable;
+	public function __construct($text, $shareable_multable=0, $mutable_multable=0) {
+		if($shareable_multable || $mutable_multable) {
+			$this->id = Question::$instances++;
+			$this->text = $text;
+			$this->shareable_multable = $shareable_multable;
+			$this->mutable_multable = $mutable_multable;
+		}
+		else { // Copy constructor!
+			$this->id = $text->id;
+			$this->text = $text->text;
+			$this->shareable_multable = $text->shareable_multable;
+			$this->mutable_multable = $text->mutable_multable;
+		}
 	}
 
 	protected function stringify($chosen) {
