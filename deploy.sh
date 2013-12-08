@@ -1,6 +1,6 @@
 #!/bin/sh
 
-files="compass.svg index.php quiz.php result.php survey.php html.php author.php color.php landing.php style.css"
+files="index.php quiz.php result.php html.php survey.php author.php color.php compass.svg style.css"
 
 chmod g+w $files
 scp $files fosc:/srv/www
