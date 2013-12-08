@@ -6,14 +6,13 @@ head();
 
 <p>Our culture comprises in part the ever growing collection of stories, songs,
 films, software, and the stuff of human creativity. Participation in our culture
-entails any of consumption, production, sharing, changing, and contributing to a
+entails consumption, production, sharing, changing, or contribution to any such
 work. Yet history has witnessed the rise and fall of many regimes dictating the
-specifics of cultural participation. Companies of the recent era latch on to
-characters and music through copyright. Software corporations hold tight their
-ideas through patents.</p> 
+specifics of cultural participation. Contemporary companies latch on to
+characters and music through copyright and patents</p>
 
 <p>Other forms of creation do exist. Free and open source software development
-has spun up with the internet. With it has arisen the Creative Commons and free
+has appeared througout the Internet. With it has arisen the Creative Commons and free
 culture.</p>
 
 <p>It is difficult to simply capture the cultural ideology of people today.  New
@@ -22,9 +21,9 @@ example, the average citizen may not be able to distinguish the views of Richard
 Stallman or Linus Torvalds. While they may generally be grouped in a "freer"
 category, their views do differ.</p>
 
-<p>Our work follows that ideological orientation should expand beyond a binary
-system of good and bad. There are many pervasive issues in the area of free and
-open source culture, so it is good to separate them. Our short quiz will present
+<p>Our work stresses that one's ideological orientation is more than just a binary
+quality of open and closed. There are many pervasive issues in the area of free and
+open source culture, so it is useful to establish a benchmark that breaks down one's views. Our short quiz will present
 you with a number of propositions. You must determine your agreement with each;
 possible values are Strongly Disagree, Disagree, Agree, and Strongly Agree. It
 is important that you make a choice in either direction.  You cannot remain
@@ -40,7 +39,7 @@ private for your use</b>.</p>
 
 <p>Once you're done, you can check out how notable people in the software and
 content industry might answer the same questions. These results were determined
-by our study of the chosen industry leaders and any of their published works.
+by our study of the chosen industry leaders and their published works.
 The answers do not officially represent their views or opinions.</p> 
 
 <?php tail(); ?>
