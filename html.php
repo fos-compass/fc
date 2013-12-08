@@ -16,7 +16,7 @@ function head() {
 <div id=\"div-nav\">
 	<p class=\"nav\">Navigation</p>
 	<ul class=\"nav\">
-		<li><a class=\"nav-a\" href=\"landing.php\">Home</a></li>
+		<li><a class=\"nav-a\" href=\"index.php\">Home</a></li>
 		<li><a class=\"nav-a\" href=\"quiz.php\">Take the Quiz</a></li>
 		<li><a class=\"nav-a\" href=\"readlist.php\">Reading List</a></li>
 	</ul>

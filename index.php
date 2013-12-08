@@ -2,29 +2,6 @@
 require_once "html.php";
 head();
 ?>
-
-<h2>Quiz Instructions</h2>
-
-<?php
-
-$tobedisplayed = $survey;
-if(array_key_exists("author", $_GET)) {
-	require_once "author.php";
-	$tobedisplayed = $authors[$_GET["author"]]->get_all_the_things();
-}
-
-echo "<form action=\"result.php\" action=\"get\">"; // TODO validate the results
-echo "<table>";
-foreach($tobedisplayed as &$question)
-	echo $question;
-if(!array_key_exists("author", $_GET))
-	echo "<tr><td class=\"centered\" colspan=\"2\"><input type=\"submit\"/></td></tr>";
-echo "</table>";
-
-foot();
-?>
-<h1><img id="logo" src="compass.svg" alt="compass symbol" />
-Welcome to FOSS Compass!</h1>
 <h2>The Free and Open Source Culture Quiz</h2>
 
 <p>Our culture comprises in part the ever growing collection of stories, songs,
@@ -67,4 +44,3 @@ by our study of the chosen industry leaders and any of their published works.
 The answers do not officially represent their views or opinions.</p> 
 
 <?php tail(); ?>
-		
