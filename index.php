@@ -1,7 +1,27 @@
 <?php
-	require("html.php");
+require_once "html.php";
+head();
+?>
 
-	head();
+<h2>Quiz Instructions</h2>
+
+<?php
+
+$tobedisplayed = $survey;
+if(array_key_exists("author", $_GET)) {
+	require_once "author.php";
+	$tobedisplayed = $authors[$_GET["author"]]->get_all_the_things();
+}
+
+echo "<form action=\"result.php\" action=\"get\">"; // TODO validate the results
+echo "<table>";
+foreach($tobedisplayed as &$question)
+	echo $question;
+if(!array_key_exists("author", $_GET))
+	echo "<tr><td class=\"centered\" colspan=\"2\"><input type=\"submit\"/></td></tr>";
+echo "</table>";
+
+foot();
 ?>
 <h1><img id="logo" src="compass.svg" alt="compass symbol" />
 Welcome to FOSS Compass!</h1>
