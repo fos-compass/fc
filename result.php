@@ -12,7 +12,26 @@ $you = new Author("You", array("R"=>0,"G"=>0,"B"=>0), $survey,
 
 array_push($authors, $you);
 
-//echo "<br/>" . $you->get_s_val() . "<br/>" . $you->get_m_val() . "<br/>";
+?>
+
+<h2>Quiz Results</h2>
+The graph below plots your opinions against those of industry leaders. Your
+previous rankings contributed points to two categories: <i>Mutability</i> and
+<i>Sharability</i>. Mutability concerns the actions you believe appropriate when
+changing a cultural work, wether it be for public or private consumption.
+Shareability concerns the means with which you believe a cultural work may be
+distributed around the globe.</p>
+
+<p>For a detailed look at our scoring methodology, view <a>this page</a></p>
+
+<p>Scores plotted in the bottom left correlate with modern capitalist buisness
+interests. Scores plotted in the top right correleate with opinions
+supporting free software and culture.</p>
+
+<?php
+
+echo "<p>You scored: (M = " . $you->get_s_val() . ", S = " . $you->get_m_val() .
+")</p>";
 
 /* Create the pData object */
 $myData = new pData();  
