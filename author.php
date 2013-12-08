@@ -4,14 +4,16 @@ require_once("survey.php");
 
 class Answer extends Question {
 	private $response;
+	private $citation;
 
-	public function __construct($question, $response) {
+	public function __construct($question, $response, $citation) {
 		parent::__construct($question);
 		$this->response = $response;
+		$this->citation = $citation;
 	}
 
 	public function __toString() {
-		return $this->stringify($this->response);
+		return $this->stringify($this->response, $this->citation);
 	}
 
 	public function get_shareability() {
@@ -33,17 +35,18 @@ class Author {
 
     private $color;
 
-    public function __construct($auth_name, $color, $questions, $answers) {
+    public function __construct($auth_name, $color, $questions, $answers, $citations) {
         $this->auth_name = $auth_name;
         $this->survey = [];
 
         assert(count($questions) == count($answers));
+		assert(count($answers) == count($citations));
 
         $this->s_val = 0;
         $this->m_val = 0;
 
-        for($i = 0; $i < count($answers); $i++) {
-			$this->survey[] = new Answer($questions[$i], $answers[$i]);
+        for($i = 0; $i < count($questions); $i++) {
+			$this->survey[] = new Answer($questions[$i], $answers[$i], $citations[$i]);
             $this->s_val += $this->survey[$i]->get_shareability();
             $this->m_val += $this->survey[$i]->get_mutability();
         }
@@ -74,9 +77,10 @@ class Author {
 
 $authors = [
     new Author("Lawrence Lessig", $colors["aqua"], $survey,
-          [1, 1, 1, -1, 1, -1, 1, 2, 1, 2, 1, 1, 1, 1, -1, -1, 1]),
+          [1, 1, 1, -1, 1, -1, 1, 2, 1, 2, 1, 1, 1, 1, -1, -1, 1],
+		  ["1.0 p.158", "1.0 p.68", "1.1", "1.1", "1.0 p.68", "1.1", "1.1", "1.0 p.138", "1.0 p.68", "1.0 p.262", "1.0 p.160", "", "1.0 p.156", "1.0 p.135", "1.0 p.135", "1.0 p.77", "1.0 p.153"]),
 
-    new Author("Eric Raymond", $colors["navy"], $survey,
+    /*new Author("Eric Raymond", $colors["navy"], $survey,
           [2, 1, 2, -1, 1, -1, 1, 2, 2, 2, 2, -1, 1, 1, 1, -1, 2]),
 
     new Author("Mark Shuttelworth", $colors["purple"], $survey,
@@ -89,7 +93,7 @@ $authors = [
           [1, 1, 1, -1, 1, 1, 1, 2, 2, 2, 1, 1, -1, 1, 1, -1, 1]),
 
     new Author("Bill Gates", $colors["lime"], $survey,
-          [-1, -2, 1, 2, -2, 1, -2, -1, -1, -1, -2, 2, -1, -1, 1, 1, -1]),
+          [-1, -2, 1, 2, -2, 1, -2, -1, -1, -1, -2, 2, -1, -1, 1, 1, -1]),*/
           
     ];
 ?>

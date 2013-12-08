@@ -22,8 +22,8 @@ class Question {
 		}
 	}
 
-	protected function stringify($chosen) {
-		static $options = [-2=> "Strongly disagree", -1=> "Disagree", 1=> "Agree", 2=> "Strongly agree"];
+	protected function stringify($chosen, $citation=NULL) {
+		static $options = [-2=> "Strongly&nbsp;disagree", -1=> "Disagree", 1=> "Agree", 2=> "Strongly&nbsp;agree"];
 
 		$visibility = "";
 		if($chosen)
@@ -36,9 +36,20 @@ class Question {
 		foreach($options as $val => $desc)
 			$result .= "<input type=\"radio\" name=\"{$this->id}\" value=\"{$val}\"" . ($val == $chosen ? " checked=\"true\"" : "") . "{$visibility}/>{$desc}<br/>";
 
-		$result .= "	</td>
-					</tr>";
+		$result .= "	</td>";
+		assert($citation != "");
+		if($citation !== NULL) {
+			$result .= "<td>";
+			if(strlen($citation)) {
+				$sourcenum = strtok($citation, " ");
+				$result .= "<a href=\"readlist.php#{$sourcenum}\">{$sourcenum}</a>&nbsp;" . strtok("");
+			}
+			else
+				$result .= "&nbsp;";
+			$result .= "</td>";
+		}
 
+		$result .= "</tr>";
 		return $result;
 	}
 
