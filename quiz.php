@@ -11,7 +11,7 @@ if($thisisaquiz)
 		culture.</p>";
 else
 	echo "<h2>" . $authors[$_GET["author"]]->get_auth_name() . "</h2>
-		<p>This is how we believe this author would have completed the survey.
+		<p>This is how we believe the author would have completed the survey.
 		The rightmost column lists the relevant references, as enumerated on the <a href=\"readlist.php\">Reading List</a> page.</p>";
  
 $tobedisplayed = $survey;

@@ -34,7 +34,9 @@ class Question {
 						<td>";
 
 		foreach($options as $val => $desc)
-			$result .= "<input type=\"radio\" name=\"{$this->id}\" value=\"{$val}\"" . ($val == $chosen ? " checked=\"true\"" : "") . "{$visibility}/>{$desc}<br/>";
+			$result .= "<label><input type=\"radio\" name=\"{$this->id}\"
+			value=\"{$val}\"" . ($val == $chosen ? " checked=\"true\"" : "") .
+			"{$visibility}/>{$desc}</label><br/>";
 
 		$result .= "	</td>";
 		assert($citation != "");

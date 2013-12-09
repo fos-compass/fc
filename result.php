@@ -22,9 +22,10 @@ changing a cultural work, wether it be for public or private consumption.
 Shareability concerns the means with which you believe a cultural work may be
 distributed around the globe.</p>
 
-<p>For a detailed look at our scoring methodology, view <a>this page</a></p>
+<!--<p>For a detailed look at our scoring methodology, view <a>this
+page</a></p>-->
 
-<p>Scores plotted in the bottom left correlate with modern capitalist buisness
+<p>Scores plotted in the bottom left correlate with modern capitalist business
 interests. Scores plotted in the top right correleate with opinions
 supporting free software and culture.</p>
 
