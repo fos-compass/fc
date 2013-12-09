@@ -5,9 +5,9 @@ $thisisaquiz = !array_key_exists("author", $_GET);
 
 if($thisisaquiz)
 	echo "<h2>Quiz Instructions</h2>
-		<p>For each proposition, decide your level of agreement with that proposition.
+		<p>For each proposition, decide your level of agreement with it.
 		No answer is right or wrong. However, you cannot remain neutral. This test is to
-		help guage your particular ideology surrounding free and open source
+		help gauge your particular ideology surrounding free and open source
 		culture.</p>";
 else
 	echo "<h2>" . $authors[$_GET["author"]]->get_auth_name() . "</h2>
