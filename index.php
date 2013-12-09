@@ -6,20 +6,16 @@ head();
 
 <p>Our culture comprises in part the ever growing collection of stories, songs,
 films, software, and the stuff of human creativity. Participation in our culture
-entails consumption, production, sharing, changing, or contribution to any such
+entails consumption, production, sharing, or changing of any such
 work. Yet history has witnessed the rise and fall of many regimes dictating the
 specifics of cultural participation. Contemporary companies latch on to
 characters and music through copyright and patents.</p>
 
-<p>Other forms of creation do exist. Free and open source software development
-has appeared throughout the Internet. With it has arisen the Creative Commons and free
-culture.</p>
+<p>Not all creators seek to gain exclusive rights to their work, however. For example, developers have founded and contributed to numerous free and open source software projects
+over the Internet. Similarly, creators in other domains have furthered free culture by establishing the Creative Commons.</p>
 
-<p>It is difficult to simply capture the cultural ideology of people today. New
-technologies have introduced new areas for disagreement and cooperation.  For
-example, the average citizen may not be able to distinguish the views of Richard
-Stallman or Linus Torvalds. While they may generally be grouped in a "freer"
-category, their views do differ.</p>
+<p>It is difficult to simply capture the cultural ideology of people today because new
+technologies have introduced new areas for disagreement and cooperation.  How can we compare the views of people such as Richard Stallman and Linus Torvalds, who agree on some issues but have drastically different takes on others. For example, both are advocates for free software, but have become divided over the issue of digital rights management.</p>
 
 <p>Our work stresses that one's ideological orientation is more than just a
 binary quality of open and closed. There are many pervasive issues in the area
