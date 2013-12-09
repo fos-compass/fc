@@ -113,7 +113,7 @@ $survey = [ new Question("If I buy content (music, books, movies, software,
                           device that limit its manner of use.", 
                          0, 1),
 
-			new Question("I don\u2019t mind downloading verified software that 
+			new Question("I don't mind downloading verified software that 
                           costs nothing but is only distributed in binary 
                           form.", 
                          0, -1),
