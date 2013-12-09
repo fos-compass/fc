@@ -36,8 +36,8 @@ discretion.</b></p>
 <p><a href="quiz.php">Are you ready to take the quiz?</a></p>
 
 <p>Once you're done, you can check out how notable people in the software and
-content industry might answer the same questions. These results were determined
-by our study of the chosen industry leaders and their published works.
+content industries might answer the same questions. These results were determined
+by our study of the chosen authors and their published works.
 The answers do not officially represent their views or opinions.</p> 
 
 <?php foot(); ?>
