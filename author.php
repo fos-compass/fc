@@ -89,7 +89,7 @@ $authors = [
 		  ["C5", "C0", "C7", "C8", "C0", "C7", "C5", "C0", "C1", "C6", "C0", "C4", "C5", "C7", "C7", "C3", "C2"]),
 
     new Author("Richard Stallman", $colors["red"], $survey,
-          [2, 2, 2, -1, 2, -1, 2, 2, 2, 1, 2, -2, 2, -1, 1, 1, 2],
+          [2, 2, 2, -1, 2, -2, 2, 2, 2, 1, 2, -2, 2, -1, 1, 1, 2],
 		  ["D0", "D1", "D3", "D7", "D5", "D3", "D3", "D0", "D5", "D3", "D1", "D2", "D3", "D4", "D4", "D6", "D0"]),
 
     new Author("Linus Torvalds", $colors["blue"], $survey,

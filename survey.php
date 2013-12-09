@@ -92,7 +92,7 @@ $survey = [ new Question("If I buy content (music, books, movies, software,
 
 			new Question("Share-alike reduces user choice because the permission
                           to create a less free version is a form of freedom.", 
-                         1, 0),
+                         -1, 0),
 
 			new Question("Digital creations should be delivered with everything 
                           I need, including the original artifacts, to change 
