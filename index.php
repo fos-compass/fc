@@ -44,4 +44,4 @@ content industry might answer the same questions. These results were determined
 by our study of the chosen industry leaders and their published works.
 The answers do not officially represent their views or opinions.</p> 
 
-<?php tail(); ?>
+<?php foot(); ?>
