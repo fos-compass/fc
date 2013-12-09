@@ -17,17 +17,19 @@ array_push($authors, $you);
 <h2>Quiz Results</h2>
 The graph below plots your opinions against those of industry leaders. Your
 previous rankings contributed points to two categories: <i>Mutability</i> and
-<i>Sharability</i>. Mutability concerns the actions you believe appropriate when
-changing a cultural work, wether it be for public or private consumption.
-Shareability concerns the means with which you believe a cultural work may be
-distributed around the globe.</p>
+<i>Shareability</i>. Mutability concerns the actions one believes appropriate when
+changing a cultural work, whether it be for public or private consumption. High mutability favors the ability to change, create, add onto, and remix content to which one has the source.
+Shareability concerns the means with which one believes a cultural work may be
+distributed around the globe. High shareability favors anyone's ability to copy and redistribute information.</p>
 
 <!--<p>For a detailed look at our scoring methodology, view <a>this
 page</a></p>-->
 
 <p>Scores plotted in the bottom left correlate with modern capitalist business
-interests. Scores plotted in the top right correleate with opinions
+interests. Scores plotted in the top right correlate with opinions
 supporting free software and culture.</p>
+
+<p>Developers of freeware and some indie games (such as those that would appear in a Humble Bundle) would be likely to appear in the upper left because they permit broad distribution of their work, but only in binary form. Those who sanction fan culture might be featured in the lower right, owing to their objection of fans' profiting from their work.</p>
 
 <?php
 
