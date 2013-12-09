@@ -9,10 +9,10 @@ films, software, and the stuff of human creativity. Participation in our culture
 entails consumption, production, sharing, changing, or contribution to any such
 work. Yet history has witnessed the rise and fall of many regimes dictating the
 specifics of cultural participation. Contemporary companies latch on to
-characters and music through copyright and patents</p>
+characters and music through copyright and patents.</p>
 
 <p>Other forms of creation do exist. Free and open source software development
-has appeared througout the Internet. With it has arisen the Creative Commons and free
+has appeared throughout the Internet. With it has arisen the Creative Commons and free
 culture.</p>
 
 <p>It is difficult to simply capture the cultural ideology of people today.  New
