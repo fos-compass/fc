@@ -1,6 +1,8 @@
 <?php
 require_once "html.php";
-head();
+head(); ?>
+
+<?php
 $thisisaquiz = !array_key_exists("author", $_GET);
 
 if($thisisaquiz)
@@ -19,12 +21,15 @@ if(!$thisisaquiz) {
 	$tobedisplayed = $authors[$_GET["author"]]->get_all_the_things();
 }
 
-echo "<form action=\"result.php\" action=\"get\">"; // TODO validate the results
+echo "<form id=\"quiz\" action=\"result.php\" onsubmit=\"return 
+validateForm();\" action=\"get\">"; // TODO validate the results
 echo "<table width=\"100%\">";
 foreach($tobedisplayed as &$question)
 	echo $question;
 if($thisisaquiz)
-	echo "<tr><td class=\"centered\" colspan=\"2\"><input type=\"submit\"/></td></tr>";
+	//echo "<tr><td class=\"centered\" colspan=\"2\"><input type=\"submit\"/></td></tr>";
+	echo "<tr><td class=\"centered\" colspan=\"2\"><button type=\"button\"
+	onclick=\"mySubmit();\"/>Submit</button></td></tr>";
 echo "</table>";
 
 foot();

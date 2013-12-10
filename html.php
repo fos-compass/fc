@@ -10,8 +10,39 @@ function head($nonsense) {
 	<head>
 		<title>FOSS Compass</title>
 		<link rel=\"stylesheet\" href=\"style.css\"/>" .
-	$nonsense .
-	"</head>
+	$nonsense;
+	
+	echo <<<END
+<script type="text/javascript">
+function validateForm()
+{
+	for(var q = 0; q < 17; q++) {
+		var one = false;
+		var group = document.getElementsByName(q);
+		for(var i = 0; i < group.length; i++) { 
+			one = one || group[i].checked; 
+		}
+
+		if(!one) {
+			alert("You must not remain neutral on any question");
+			event.returnValue=false;
+			return false;
+		}
+	}
+
+	return true;
+}
+
+function mySubmit()
+{
+	if(validateForm()) {
+		document.getElementById("quiz").submit();
+	}
+}
+</script>
+END;
+	
+	echo "</head>
 	<body>";
 
 	echo "<div id=\"div-main\">
