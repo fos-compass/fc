@@ -23,7 +23,7 @@ class Question {
 	}
 
 	protected function stringify($chosen, $citation=NULL) {
-		static $options = [-2=> "Strongly&nbsp;disagree", -1=> "Disagree", 1=> "Agree", 2=> "Strongly&nbsp;agree"];
+		static $options = array(-2=> "Strongly&nbsp;disagree", -1=> "Disagree", 1=> "Agree", 2=> "Strongly&nbsp;agree");
 
 		$visibility = "";
 		if($chosen)
@@ -68,7 +68,7 @@ class Question {
 	}
 }
 
-$survey = [ new Question("If I buy content (music, books, movies, software, 
+$survey = array( new Question("If I buy content (music, books, movies, software, 
                           etc.), I should be able to use it on all my devices.", 
                          1, 0),
 
@@ -136,5 +136,5 @@ $survey = [ new Question("If I buy content (music, books, movies, software,
                          1, 1),
 
 			new Question("Works should not contain digital rights management.", 
-                         1, 1) ];
+                         1, 1) );
 ?>

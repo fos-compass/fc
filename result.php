@@ -92,7 +92,7 @@ $myPicture->setGraphArea(40,40,370,370);
 $myScatter = new pScatter($myPicture,$myData);
 
 /* Draw the scale */
-$myScatter->drawScatterScale(["Mode"=>SCALE_MODE_MANUAL, "ManualScale"=>[0=>["Min"=>-20, "Max"=>20], 1=>["Min"=>-20, "Max"=>20]]]);
+$myScatter->drawScatterScale(array("Mode"=>SCALE_MODE_MANUAL, "ManualScale"=>array(0=>array("Min"=>-20, "Max"=>20), 1=>array("Min"=>-20, "Max"=>20))));
 
 /* Draw the legend */
 $myScatter->drawScatterLegend(280,300,array("Mode"=>LEGEND_VERTICAL,"Style"=>LEGEND_NOBORDER,
