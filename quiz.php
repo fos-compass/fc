@@ -27,9 +27,8 @@ echo "<table width=\"100%\">";
 foreach($tobedisplayed as &$question)
 	echo $question;
 if($thisisaquiz)
-	//echo "<tr><td class=\"centered\" colspan=\"2\"><input type=\"submit\"/></td></tr>";
 	echo "<tr><td class=\"centered\" colspan=\"2\"><button type=\"button\"
-	onclick=\"mySubmit();\"/>Submit</button></td></tr>";
+	onclick=\"mySubmit();\">Submit</button></td></tr>";
 echo "</table>";
 
 foot();
